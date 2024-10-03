@@ -1,0 +1,970 @@
+{
+	"info": {
+		"_postman_id": "6bbe344a-13c1-4a2c-a711-4f78b2761e46",
+		"name": "Social Sphere",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17972053"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"fullName\":\"Gharam Alhjy\",\r\n\"userName\":\"ghram@code18\",\r\n\"email\" :\"ghramalhajyalhajy@gmail.com\",\r\n\"password\":\"hhhoieoifejiofeif\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"fullName\":\"Gharam Alhjy\",\r\n\"userName\":\"ghram@code18\",\r\n\"email\" :\"ghramalhajyalhajy@gmail.com\",\r\n\"password\":\"hhhoieoifejiofeif\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 03 Oct 2024 18:52:58 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User registered successfully.\"\n}"
+				},
+				{
+					"name": "register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"fullName\":\"Gharam Alhjy\",\r\n\"userName\":\"ghram@code18\",\r\n\"email\" :\"ghramalhajyalhajy@gmail.com\",\r\n\"password\":\"hhhoieoifejiofeif\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 03 Oct 2024 18:54:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"User with this email or username already exists\"\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\"email\" :\"ghramalhajyalhajy@gmail.com\",\n\"password\":\"hhhoieoifejiofeif\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"email\" :\"ghena@gmail.com\",\n\"password\":\"hhhoieoifejiofeif\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 03 Oct 2024 18:58:05 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnaGVuYSIsImlhdCI6MTcyNzk4MTg4NCwiZXhwIjoxNzI4MDE3ODg0fQ.VopaQ-Nh0G5lYRGfQYkY1tsPapw_lwu9EJk9mtLGBYs\"\n}"
+				},
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"email\" :\"ghramalhajyalhajy@gmail.com\",\n\"password\":\"hhhoieoifejiofeif\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 03 Oct 2024 18:58:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnaHJhbUBjb2RlMTgiLCJpYXQiOjE3Mjc5ODE5MjQsImV4cCI6MTcyODAxNzkyNH0.9bfI6IOWJ8L1KB21yQdKdKnxTTYzYvZe-tvcDOP9piY\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"userName\":\"ghena\",\r\n\"email\" :\"ghena@gmail.com\",\r\n\"password\":\"hhhoieoifejiofeif\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "chat",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\"userName\":\"ghena\",\r\n\"email\" :\"ghena@gmail.com\",\r\n\"password\":\"hhhoieoifejiofeif\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 03 Oct 2024 18:59:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User logged out successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnaHJhbUBjb2RlMTgiLCJpYXQiOjE3Mjc5ODUzMzksImV4cCI6MTcyODAyMTMzOX0.JtfnvYY0kRxVUfxDEPn0C31yzo52bm4xqROpR13GybA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Sample Post Title\",\r\n    \"type\": \"ADS\",\r\n    \"content\": \"This is a sample post content.\",\r\n    \"createdAt\": \"2024-10-03 12:00:00\",  \r\n    \"updatedAt\": \"2024-10-03 12:00:00\",  \r\n    \"likeCount\": 0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/posts/createPost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"posts",
+						"createPost"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "creat chat room",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Sample Post Title\",\r\n    \"type\": \"ADS\",\r\n    \"content\": \"This is a sample post content.\",\r\n    \"createdAt\": \"2024-10-03 12:00:00\",  \r\n    \"updatedAt\": \"2024-10-03 12:00:00\",  \r\n    \"likeCount\": 0\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/posts/createPost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"posts",
+								"createPost"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 03 Oct 2024 19:55:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Post created successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "feeds",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"userName\":\"ghena\",\r\n\"email\" :\"ghena@gmail.com\",\r\n\"password\":\"hhhoieoifejiofeif\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/posts/feed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"posts",
+						"feed"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "feeds",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\"userName\":\"ghena\",\r\n\"email\" :\"ghena@gmail.com\",\r\n\"password\":\"hhhoieoifejiofeif\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/posts/feed",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"posts",
+								"feed"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 03 Oct 2024 21:34:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"e7b089b2-8d4f-49c1-a4c2-410957e15b95\",\n        \"title\": \"Sample Post Title\",\n        \"type\": \"ADS\",\n        \"content\": \"This is a sample post content.\",\n        \"createdAt\": \"2024-10-03 22:55:55\",\n        \"updatedAt\": null,\n        \"user\": {\n            \"id\": \"d041fee9-e5b3-4f76-bb57-5d8e33f8d195\",\n            \"fullName\": \"Gharam Alhjy\",\n            \"userName\": \"ghram@code18\",\n            \"email\": \"ghramalhajyalhajy@gmail.com\",\n            \"password\": \"$2a$10$R8a8.VOivt4RIPvXpRopDeHUJbq7elqPH2QgmhPWPIBJAwxTn59lO\",\n            \"phoneNumber\": \"0946120901\",\n            \"verified\": false,\n            \"active\": true\n        },\n        \"likeCount\": 0,\n        \"likes\": null,\n        \"comments\": []\n    },\n    {\n        \"id\": \"0c270f70-6312-4b87-9751-11bd4c2dd4d7\",\n        \"title\": \"Sample Post Title\",\n        \"type\": \"ADS\",\n        \"content\": \"This is a sample post content.\",\n        \"createdAt\": \"2024-10-03 22:46:49\",\n        \"updatedAt\": null,\n        \"user\": {\n            \"id\": \"d041fee9-e5b3-4f76-bb57-5d8e33f8d195\",\n            \"fullName\": \"Gharam Alhjy\",\n            \"userName\": \"ghram@code18\",\n            \"email\": \"ghramalhajyalhajy@gmail.com\",\n            \"password\": \"$2a$10$R8a8.VOivt4RIPvXpRopDeHUJbq7elqPH2QgmhPWPIBJAwxTn59lO\",\n            \"phoneNumber\": \"0946120901\",\n            \"verified\": false,\n            \"active\": true\n        },\n        \"likeCount\": 7,\n        \"likes\": null,\n        \"comments\": [\n            {\n                \"id\": \"73152e8c-7afc-40b0-a527-e70c320c881b\",\n                \"content\": \"This is a comment on the post.\",\n                \"createdTimestamp\": null,\n                \"postId\": \"0c270f70-6312-4b87-9751-11bd4c2dd4d7\",\n                \"user\": \"115dae92-9444-4c18-8323-282c2678a00b\"\n            },\n            {\n                \"id\": \"4515a27d-125f-4d6b-ac1c-de0061748a83\",\n                \"content\": \"This is a comment on the post.\",\n                \"createdTimestamp\": null,\n                \"postId\": \"0c270f70-6312-4b87-9751-11bd4c2dd4d7\",\n                \"user\": \"115dae92-9444-4c18-8323-282c2678a00b\"\n            },\n            {\n                \"id\": \"fb647613-7713-4c15-bdfc-ea6dbf7988e9\",\n                \"content\": \"This is a comment on the post.\",\n                \"createdTimestamp\": null,\n                \"postId\": \"0c270f70-6312-4b87-9751-11bd4c2dd4d7\",\n                \"user\": \"115dae92-9444-4c18-8323-282c2678a00b\"\n            },\n            {\n                \"id\": \"228be6e5-179b-47b2-8bd3-df67c9f6b972\",\n                \"content\": \"This is a comment on the post.\",\n                \"createdTimestamp\": \"2024-10-03T21:18:24.761+00:00\",\n                \"postId\": \"0c270f70-6312-4b87-9751-11bd4c2dd4d7\",\n                \"user\": \"115dae92-9444-4c18-8323-282c2678a00b\"\n            },\n            {\n                \"id\": \"5e1a6dfa-f342-4594-890e-ce198d3bd4c3\",\n                \"content\": \"This is a comment on the post.\",\n                \"createdTimestamp\": \"2024-10-03T21:23:53.325+00:00\",\n                \"postId\": \"0c270f70-6312-4b87-9751-11bd4c2dd4d7\",\n                \"user\": \"115dae92-9444-4c18-8323-282c2678a00b\"\n            },\n            {\n                \"id\": \"432e4bbd-4f30-45d7-a0b0-1ae7d0dbe345\",\n                \"content\": \"This is a comment on the post.\",\n                \"createdTimestamp\": \"2024-10-03T21:27:23.970+00:00\",\n                \"postId\": \"0c270f70-6312-4b87-9751-11bd4c2dd4d7\",\n                \"user\": \"115dae92-9444-4c18-8323-282c2678a00b\"\n            },\n            {\n                \"id\": \"16b876bd-958c-42b5-a892-338a23ae68e2\",\n                \"content\": \"This is a comment on the post new.\",\n                \"createdTimestamp\": \"2024-10-03T21:27:32.332+00:00\",\n                \"postId\": \"0c270f70-6312-4b87-9751-11bd4c2dd4d7\",\n                \"user\": \"115dae92-9444-4c18-8323-282c2678a00b\"\n            },\n            {\n                \"id\": \"b2c517e7-7078-40d6-b7d0-8b5687bb46f3\",\n                \"content\": \"This is a comment on the post new.\",\n                \"createdTimestamp\": \"2024-10-03T21:29:38.155+00:00\",\n                \"postId\": \"0c270f70-6312-4b87-9751-11bd4c2dd4d7\",\n                \"user\": \"115dae92-9444-4c18-8323-282c2678a00b\"\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Like post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYXJlQGNvZGUxOCIsImlhdCI6MTcyNzk5MDYwOCwiZXhwIjoxNzI4MTQwODA0fQ.KSndJyrpOmaHSjs8lDDNp7aZEjKd2U22jwbnHnxYVXE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/posts/0c270f70-6312-4b87-9751-11bd4c2dd4d7/like",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"posts",
+						"0c270f70-6312-4b87-9751-11bd4c2dd4d7",
+						"like"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Like post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/posts/0c270f70-6312-4b87-9751-11bd4c2dd4d7/like",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"posts",
+								"0c270f70-6312-4b87-9751-11bd4c2dd4d7",
+								"like"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 03 Oct 2024 21:05:51 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Post liked successfully!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYXJlQGNvZGUxOCIsImlhdCI6MTcyNzk5MDYwOCwiZXhwIjoxNzI4MTQwODA0fQ.KSndJyrpOmaHSjs8lDDNp7aZEjKd2U22jwbnHnxYVXE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"This is a comment on the post.\",\r\n    \"postId\": \"e7b089b2-8d4f-49c1-a4c2-410957e15b95\",\r\n    \"user\": {\r\n        \"id\": \"d041fee9-e5b3-4f76-bb57-5d8e33f8d195\"\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/posts/0c270f70-6312-4b87-9751-11bd4c2dd4d7/comment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"posts",
+						"0c270f70-6312-4b87-9751-11bd4c2dd4d7",
+						"comment"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Comment",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"This is a comment on the post.\",\r\n    \"postId\": \"e7b089b2-8d4f-49c1-a4c2-410957e15b95\",\r\n    \"user\": {\r\n        \"id\": \"d041fee9-e5b3-4f76-bb57-5d8e33f8d195\"\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/posts/0c270f70-6312-4b87-9751-11bd4c2dd4d7/comment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"posts",
+								"0c270f70-6312-4b87-9751-11bd4c2dd4d7",
+								"comment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 03 Oct 2024 21:06:30 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Comment added successfully!\"\n}"
+				}
+			]
+		}
+	]
+}
