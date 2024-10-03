@@ -42,7 +42,7 @@ This project is a backend development for a social media application where users
    ```
 
 2. **Set up the database:**
-   - Create a PostgreSQL database and configure your application properties for database connection.
+   - Create a 0beb8bc8-9611-4d11-ab34-f784779deb5aPostgreSQL database and configure your application properties for database connection.
 
 3. **Build the project:**
    ```bash
@@ -57,12 +57,6 @@ This project is a backend development for a social media application where users
 ## Postman Collection
 
 A Postman collection for testing the API endpoints is included in this repository. Import the collection into Postman to test the various API functionalities.
-
-## Submission Guidelines
-
-Upload the code assignment on GitLab, Github, or any GIT repository and provide access to the following emails:
-- abdulhak.maatouk@beno.com
-- rana.aljarrah@beno.com
 
 ## License
 
